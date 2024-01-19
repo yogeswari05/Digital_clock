@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Digital Clock</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main">
+      <div class="clock">
+         <div class="container">
+            <div class="time">
+               <div class="hour_div">
+                  <span class="hour">00</span>
+                  <span class="hname">HOURS</span>            
+               </div>
+               <span class="colon">:</span>
+               <div class="minutes_div">
+                  <span class="minutes">00</span>
+                  <span class="mname">MINS</span>
+               </div>
+               <span class="colon">:</span>
+               <div class="sec_div">
+                  <span class="seconds">00</span>
+                  <span class="same">SECS</span>
+               </div>
+               <div style="background-color: transparent; width:50px;">
+               <span class="am_pm">AM</span>
+               </div>
+               
+            </div>
+            <div class="calender">
+               <span class="month">Month, </span>
+               <span class="day">day</span>
+               <span class="day_num">date</span>
+               <span class="year">year</span>               
+            </div>
+         </div>
+      </div>
+      <span class="toggle" curr_format="12">
+         <div class="btn-main">
+            <button onclick="toggler_format_func()" class="button" id="swi">
+               click to see in 24-hour format
+            </button>
+         </div>
+      </span>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
